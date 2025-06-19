@@ -19,7 +19,8 @@ func main() {
 
 	e := echo.New()
 
-	domainUrl := "http://localhost:5173"
+	// domainUrl := "http://localhost:5173"
+	domainUrl := "https://frontubugoechecker.trap.show"
 	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
 	AllowOrigins: []string{domainUrl}, // フロントエンドのURLを指定
 	AllowMethods: []string{"GET"}, // 許可するメソッド
