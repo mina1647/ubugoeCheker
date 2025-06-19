@@ -6,7 +6,6 @@ import (
 	"time"
 
 	"github.com/labstack/echo/v4"
-	"github.com/labstack/echo/v4/middleware"
 	traq "github.com/traPtitech/go-traq"
 )
 
@@ -19,13 +18,6 @@ func main() {
 
 	e := echo.New()
 
-	// domainUrl := "http://localhost:5173"
-	domainUrl := "https://frontubugoechecker.trap.show"
-	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
-	AllowOrigins: []string{domainUrl}, // フロントエンドのURLを指定
-	AllowMethods: []string{"GET"}, // 許可するメソッド
-	AllowHeaders: []string{"Content-Type"}, // 許可するヘッダー
-}))
 
 	e.GET("/ubugoe/:userId", func(c echo.Context) error {
 		userID := c.Param("userId")
