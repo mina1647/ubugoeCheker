@@ -5,7 +5,7 @@ const data = ref<string[]>()
 const query = ref<string>('')
 
 const getUbugoe = async (name: string) => {
-  const responce = await fetch(`http://localhost:8080/ubugoe/${name}`, {
+  const responce = await fetch(`https://ubugoechecker.trap.show/ubugoe/${name}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
