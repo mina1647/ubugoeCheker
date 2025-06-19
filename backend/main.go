@@ -19,7 +19,9 @@ func main() {
 	e := echo.New()
 
 
-	e.GET("/ubugoe/:userId", func(c echo.Context) error {
+	e.GET("api/ubugoe/:userId", func(c echo.Context) error { 
+		// フロントからは同じドメイン(https:ubugoechecker)の/apiにアクセスを飛ばす　(vite.config.tsで設定している)
+		// /api →　ならバックエンドという風にする。ので変更
 		userID := c.Param("userId")
 		//fmt.Println(channelID)
 
