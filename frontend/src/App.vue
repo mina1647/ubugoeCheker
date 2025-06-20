@@ -16,8 +16,9 @@ import Checker from './components/Checker.vue'
   height: 100vh;
   width: 100vw;
   position: fixed;
-  /* display: flex; */
+  display: flex;
   top: 0;
   left: 0;
+  flex-direction: column;
 }
 </style>

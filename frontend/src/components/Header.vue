@@ -10,9 +10,12 @@
   color: #6f3f05;
   width: 100vw;
   height: 10vh;
-  position: fixed;
-  top: 0;
-  left: 0;
+  /* position: fixed; */
+  /* top: 0;
+  left: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-title {

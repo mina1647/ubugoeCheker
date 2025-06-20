@@ -48,9 +48,10 @@ const getUbugoe = async (name: string) => {
   width: 100%;
   height: 100vh;
   top: 10vh;
-  left: 0;
-  position: fixed;
+  /* left: 0; */
+  /* position: fixed; */
   padding: 1rem;
+  overflow-y: auto;
 }
 
 .nameinput {
@@ -65,16 +66,19 @@ const getUbugoe = async (name: string) => {
 
 .item {
   display: flex;
-  width: 100%;
-  padding: 1rem;
+  width: 95%;
+  margin: 1rem;
   justify-content: center;
   align-items: center;
 }
 
 .text {
+  background-color: #c0fbff;
   /* display: flex; */
   width: 85%;
   height: 100%;
+  border-radius: 1rem;
+  padding: 0.8rem;
   /* text-align: center; */
 }
 
@@ -87,6 +91,7 @@ const getUbugoe = async (name: string) => {
 }
 
 .usericon {
+  background-color: #fff;
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
